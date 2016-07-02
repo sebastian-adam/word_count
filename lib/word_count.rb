@@ -1,7 +1,7 @@
 class String
-  def word_count(string)
-    if string.upcase == self.upcase
-      string
+  def word_count(target_word)
+    if target_word = self
+      0
     end
-  end
+  end  
 end
