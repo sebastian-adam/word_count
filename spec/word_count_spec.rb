@@ -22,4 +22,9 @@ describe('String#word_count') do
     expect("This is a sentence sentence".word_count("sentence")).to(eq(2))
   end
 
+  it("takes one word and one sentence from the user and returns the number of times the word repeats in the sentence, ignoring capitalization and punctuation") do
+    expect("This is a sentence. This is also a sentence and now there are two sentences.".word_count("sentence")).to(eq(2))
+
+  end
+
 end
