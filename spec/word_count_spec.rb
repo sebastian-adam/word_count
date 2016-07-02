@@ -7,4 +7,8 @@ describe('String#word_count') do
     expect("word".word_count("word")).to(eq("word"))
   end
 
+  it("takes two words from the user and returns one iteration of the word if the words are alike, ignoring capitalization") do
+    expect("Word".word_count("word")).to(eq("word"))
+  end
+
 end
